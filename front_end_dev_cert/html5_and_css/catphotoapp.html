@@ -1,0 +1,44 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+  .red-text {
+    color: red;
+  }
+  .smaller-image {
+    width: 100px;
+    ;
+  }
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+</style>
+<h2 class="red-text">CatPhotoApp</h2>
+<p>View more <a href="#">cat photos</a></p>
+<a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="Cute organge cat laying on its back"></a>
+<p>Things cats love:</p>
+<ul>
+  <li>Food</li>
+  <li>Catnip</li>
+  <li>Milk</li>
+</ul>
+<p>Top 3 things cats hate:</p>
+<ol>
+  <li>Water</li>
+  <li>Dogs</li>
+  <li>Cold</li>
+</ol>
+<form action="/submit-cat-photo">
+  <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
