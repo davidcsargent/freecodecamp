@@ -20,10 +20,14 @@
     border-style: solid;
     border-radius: 50%;
   }
+  .silver-background {
+    background-color: silver;
+  }
 </style>
 <h2 class="red-text">CatPhotoApp</h2>
 <p>View more <a href="#">cat photos</a></p>
 <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="Cute organge cat laying on its back"></a>
+<div class="silver-background">
 <p>Things cats love:</p>
 <ul>
   <li>Food</li>
@@ -36,10 +40,11 @@
   <li>Dogs</li>
   <li>Cold</li>
 </ol>
-<form action="/submit-cat-photo">
-  <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+</div>
+<form id="cat-photo-form" action="/submit-cat-photo">
+  <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
   <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
-  <label><input type="checkbox" name="personality"> Loving</label>
+  <label><input type="checkbox" name="personality" checked> Loving</label>
   <label><input type="checkbox" name="personality"> Lazy</label>
   <label><input type="checkbox" name="personality"> Energetic</label>
   <input type="text" placeholder="cat photo URL" required>
