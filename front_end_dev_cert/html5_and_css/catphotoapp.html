@@ -1,18 +1,8 @@
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   h2 {
     font-family: Lobster, Monospace;
-  }
-  p {
-    font-size: 16px;
-    font-family: monospace;
-  }
-  .red-text {
-    color: red;
-  }
-  .smaller-image {
-    width: 100px;
-    ;
   }
   .thick-green-border {
     border-color: green;
@@ -20,13 +10,25 @@
     border-style: solid;
     border-radius: 50%;
   }
-  .silver-background {
-    background-color: silver;
-  }
 </style>
-<h2 class="red-text">CatPhotoApp</h2>
-<p>View more <a href="#">cat photos</a></p>
-<a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="Cute organge cat laying on its back"></a>
+
+<div class="container-fluid">
+
+<h2 class="text-primary text-center">CatPhotoApp</h2>
+  
+<a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="Cute organge cat laying on its back"></a>
+<img class="img-responsive" src="https://bit.ly/fcc-running-cats">
+<div class="row">
+<div class="col-xs-4">
+  <button class="btn btn-block btn-primary"type="submit">Like</button>
+  </div>
+<div class="col-xs-4">
+<button class="btn btn-block btn-info">Info</button>
+  </div>
+<div class="col-xs-4">
+<button class="btn btn-block btn-danger">Delete</button>
+  </div>
+</div>
 <div class="silver-background">
 <p>Things cats love:</p>
 <ul>
@@ -50,3 +52,5 @@
   <input type="text" placeholder="cat photo URL" required>
   <button type="submit">Submit</button>
 </form>
+
+</div>
